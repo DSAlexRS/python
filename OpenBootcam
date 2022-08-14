@@ -1,8 +1,24 @@
-#EX1
+#Part 1
 
 def vf (int,n,vp):
   vf=vp*(1+int)**n
   return vf
 
 vf(0.03,6,500) 
+
+#Part 2
+
+class coche:
+  
+  puertas = 0
+  def __init__(self, puertas):
+    self.puertas = puertas
+  def add_puerta(self, puertas, puerta):
+    self.puerta = puerta
+    self.puertas = self.puertas + self.puerta
+
+
+miCoche = coche(2)
+miCoche.add_puerta(miCoche.puertas, 1)
+miCoche.puertas
 
